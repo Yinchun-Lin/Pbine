@@ -45,7 +45,6 @@ Ibind_n_dim = function(p1, p2, ...,sigma =  sigma){
 		"if(",paste("is.na(",paste("p",1:n_combine,sep=""),"[xx])",sep="",collapse=" | "),"){return(NA)};",
 		"return(1-",foreheadint_text,tailint_text,"}",sep=""))))
 		
-
 	temp=unlist(lapply(1:length(p1), function(xx) int_f_nd(xx)))
 	temp=ifelse(temp<0,0,temp)
 	return(temp)
@@ -67,7 +66,7 @@ r14=0.4
 r23=0.6
 r24=0.2
 r34=0.1
-sigma=matrix(c(1,r12,r13,r14,r12,1,r23,r24,r13,r23,1,r34,r14,r24,r34,1),4,4)
+COV=matrix(c(1,r12,r13,r14,r12,1,r23,r24,r13,r23,1,r34,r14,r24,r34,1),4,4)
 p1=p2=p3=p4=0.05
 #Ibind_n_dim(p1,p2,p3,p4,sigma=COV)
 #p_I = 0.01404982
