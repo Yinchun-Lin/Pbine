@@ -1,6 +1,6 @@
 der_erf=function(x) {2/(pi^0.5)*exp(-x^2)}
 der_norm=function(x) {1/(2*2^0.5)*der_erf(x/(2^0.5))}
-#Imprtant!!! Since: der_qnorm(1-exp(y)) was exchanged to der_qnorm(exp(y)) in test_f, qnorm(x) -> qnorm(x,lower.tail=FALSE)
+#Important!!! Since: der_qnorm(1-exp(y)) was exchanged to der_qnorm(exp(y)) in test_f, qnorm(x) -> qnorm(x,lower.tail=FALSE)
 der_qnorm=function(x) {1/(der_norm(qnorm(x,lower.tail=FALSE)))}
 
 test_f=function(x,y,r,w=NULL){
@@ -9,10 +9,8 @@ test_f=function(x,y,r,w=NULL){
 	temp_qnorm_x=qnorm(exp(x),lower.tail=FALSE)
 	temp_qnorm_y=qnorm(exp(y),lower.tail=FALSE)
     if(is.na(temp_qnorm_y) | is.na(temp_qnorm_x) | is.infinite(temp_qnorm_y) | is.infinite(temp_qnorm_x)){
-	  print("KK")
       return(0)
     }
-	#print("YY")
     return(abs(-der_norm((temp_qnorm_y-r*temp_qnorm_x)/rr)*(-der_qnorm(exp(y))/rr))*exp(x)*exp(y))
   }else{
 	temp_qnorm_x=qnorm(exp(x/w),lower.tail=FALSE)
