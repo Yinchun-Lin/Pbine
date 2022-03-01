@@ -52,22 +52,22 @@ Ibind_n_dim = function(p1, p2, ...,sigma =  sigma){
 
 
 #example
-r12=0.2
-r13=0.3
-r23=0.6
-COV=matrix(c(1,r12,r13,r12,1,r23,r13,r23,1),3,3)
-p1=p2=p3=c(0.04,0.05)
-Ibind_n_dim(p1,p2,p3,sigma=COV)
-#p_I =  0.01518269 0.02151095
+r12 = 0.2
+r13 = 0.3
+r23 = 0.6
+COV = matrix(c(1, r12, r13, r12, 1, r23, r13, r23, 1), 3, 3)
+p1 = p2 = p3 = c(0.04, 0.05)
+Ibind_n_dim(p1, p2, p3, sigma = COV)
+#p_I = 0.01518269 0.02151095
 
-r12=0.2
-r13=0.3
-r14=0.4
-r23=0.6
-r24=0.2
-r34=0.1
-COV=matrix(c(1,r12,r13,r14,r12,1,r23,r24,r13,r23,1,r34,r14,r24,r34,1),4,4)
-p1=p2=p3=p4=0.05
-#Ibind_n_dim(p1,p2,p3,p4,sigma=COV)
+r12 = 0.2
+r13 = 0.3
+r14 = 0.4
+r23 = 0.6
+r24 = 0.2
+r34 = 0.1
+COV = matrix(c(1, r12, r13, r14, r12, 1, r23, r24, r13, r23, 1, r34, r14, r24, r34, 1), 4, 4)
+p1 = p2 = p3 = p4 = 0.05
+#Ibind_n_dim(p1, p2, p3, p4, sigma=COV)
 #p_I = 0.01404982
 #0.01404982 < 0.02151095 (<0.05) means the larger synergy happened as # of p-value to be combined.
