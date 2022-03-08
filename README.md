@@ -8,4 +8,4 @@ In addition, Pbine is allowed an advanced option to use. You can set different w
 
 # 2. Combine p-values in higher dimension
 This script only allows you to combine n-dim p-values by using Pbine method.
-(Note: when you apply on the case of dimension greater than four, it's will take more computation time.)
+(Note: when you apply on the case of dimension greater than four, it will takes more computation time.)
