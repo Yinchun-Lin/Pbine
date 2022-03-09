@@ -12,19 +12,11 @@ This repository provides a tools for p-values (dependent) combination. We propos
  - **p** \: a vector of combined p-values with length equal to n. 
 
 ## Example 
-r12 = 0.2/n
-r13 = 0.3
-r23 = 0.6
-COV = matrix(c(1, r12, r13, r12, 1, r23, r13, r23, 1), 3, 3)
-p1 = p2 = p3 = c(0.04, 0.05)
-pm = cbind(p1, p2, p3)
-Ibind_n_dim(p1, p2, p3, sigma = COV)
+r12 = 0.2<br />
+r13 = 0.3<br />
+r23 = 0.6<br />
+COV = matrix(c(1, r12, r13, r12, 1, r23, r13, r23, 1), 3, 3)<br />
+p1 = p2 = p3 = c(0.04, 0.05)<br />
+pm = cbind(p1, p2, p3)<br />
+Pbine(p1, p2, p3, sigma = COV)<br />
 \# 0.01518269 0.02151095
-
-
-This script allows you to combine two p-values by using 3 methods, Pbine, Fisher's, and decorrelation methods.
-In addition, Pbine is allowed an advanced option to use. You can set different weight to each p-values. (More precisely, it changes the statistics from <img src="https://latex.codecogs.com/svg.image?p_{1}p_{2}" title="p_{1}p_{2}" /> to <img src="https://latex.codecogs.com/svg.image?p_{1}^{w}p_{2}^{(1-w)}" title="p_{1}^{w}p_{2}^{(1-w)}" />.)
-
-# 2. Combine p-values in higher dimension
-This script only allows you to combine n-dim p-values by using Pbine method.
-(Note: when you apply on the case of dimension greater than four, it will takes more computation time.)
