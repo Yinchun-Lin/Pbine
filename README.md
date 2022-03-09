@@ -10,11 +10,11 @@ of independent p-values, where <img src="http://www.sciweavers.org/tex2img.php?e
 ![](http://www.sciweavers.org/upload/Tex2Img_1646821467/render.png)
 and 
 ![1](http://www.sciweavers.org/upload/Tex2Img_1646818234/render.png)
-reprents independent and dependent p-values respectively.
+represents independent and dependent p-values respectively.
 
 
 ## Input Argument
- - **p** \: A matrix (n by m) of p-values. n row reprent how many pairs of p-values to be combined and m column reprent how many p-values (studies) to be combined. 
+ - **p** \: A matrix (n by m) of p-values. n row represent how many pairs of p-values to be combined and m column represent how many p-values (studies) to be combined. 
  - **method** \: Three method can be selected. "Int": our method proposed above, "Fisher": Fisher's method, and "Decor": Decorrelation method (proposed by Zaykin, 2002).
  - **sigma** \: Correlation matrix of p-values used in "Int" and "Decor" methods.
 
