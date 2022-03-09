@@ -10,7 +10,7 @@ of independent p-values, where <img src="http://www.sciweavers.org/tex2img.php?e
 ![](http://www.sciweavers.org/upload/Tex2Img_1646821467/render.png)
 and 
 ![1](http://www.sciweavers.org/upload/Tex2Img_1646818234/render.png)
-represents independent and dependent p-values respectively.
+represent independent and dependent p-values respectively.
 
 
 ## Input Argument
