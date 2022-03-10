@@ -5,7 +5,7 @@ This repository provides a tool for a meta-analysis based on a combination of p-
 
 ## Input Argument
  - **p** \: A matrix (n by m) of p-value. This matrix is composed by p-value sequences with a size of n in m studies. In each of the n rows, m p-values (i.e., p-values from m studies) will be combined. 
- - **method** \: Three methods of p-value combination are provided. "Int": the proposed numerical integration method; "Fisher": Fisher's method that it assumes all p-values are independent (Fisher, 1972); "Decor": Decorrelation method (Zaykin, 2002).
+ - **method** \: Three methods of p-value combination are provided. "Int": the proposed numerical integration method; "Fisher": Fisher's method that it assumes all p-values are independent (Fisher, 1970); "Decor": Decorrelation method (Zaykin, 2002).
  - **sigma** \: A user-specified correlation matrix (m by m) of the combined p-values. This correlation matrix is used in the "Int" and "Decor" methods. If n = 1, sigma must be provided. If n > 1 and sigma is not specified by a user, then sigma will be estimated based on the pairs of p-value sequence with a size of n.
 
 ## Output Value
