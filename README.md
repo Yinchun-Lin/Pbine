@@ -1,7 +1,7 @@
 # Pbine
 
 ## Introduction
-This repository provides a tool for a meta-analysis based on a combination of p-values from multiple studies. In our method, p-values are combined based on the test statistic: Fisher's p-value combination (Fisher, 1970) or weighted Fisher's p-value combination (reference). The method calculates statistical significance of the test statistic by using a numerical integration procedure (Lin, Liang, and Yang, 2022). To account for the correlation of p-values, a correlation matrix of p-values (sigma) should be provided or estimated based on the paired of observed p-value sequences. In addition to the proposed numerical integration method, the conventional Fisher’s method (Fisher, 1970) that it assumes all p-values are independent and the decorrelation method (Zaykin, 2002) are also provided.
+This repository provides a tool for a meta-analysis based on a combination of p-values from multiple studies. In our method, p-values are combined based on the test statistic: Fisher's p-value combination (Fisher, 1970) or weighted Fisher's p-value combination (Hou, 2005). The method calculates statistical significance of the test statistic by using a numerical integration procedure (Lin, Liang, and Yang, 2022). To account for the correlation of p-values, a correlation matrix of p-values (sigma) should be provided or estimated based on the paired of observed p-value sequences. In addition to the proposed numerical integration method, the conventional Fisher’s method (Fisher, 1970) that it assumes all p-values are independent and the decorrelation method (Zaykin, 2002) are also provided.
 
 ## Input Argument
  - **p** \: A matrix (n by m) of p-value. This matrix is composed by p-value sequences with a size of n in m studies. In each of the n rows, m p-values (i.e., p-values from m studies) will be combined. 
@@ -29,10 +29,10 @@ r23 = 0.6 <br />
 COV = matrix(c(1, r12, r13, r12, 1, r23, r13, r23, 1), 3, 3) <br />
 p1 = p2 = p3 = 0.05 <br />
 pm = t(c(p1, p2, p3)) <br />
-Pbine(pm, sigma = COV, method = "Int") \# In this case (if n = 1), sigma is needed to be provided. <br />
+Pbine(pm, sigma = COV, method = "Int") \# If n = 1, sigma is needed to be provided. <br />
 \# 0.02151095 <br />
 
-### 3. Comparision on higher dimension (m) with Fisher's method.
+### 3. Comparison on higher dimension (m) with Fisher's method.
 r12 = 0.2 <br />
 r13 = 0.3 <br />
 r14 = 0.4 <br />
