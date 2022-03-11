@@ -49,7 +49,7 @@ pm = t(c(p1, p2, p3, p4)) <br />
 \# NOTE: 0.01404982 < 0.0023 means Fisher's method overestimates the significance (i.e. there's an inflated type I error) when p-values are correlated.
 
 ## Reference
- - Fisher, R.A., *Statistical methods for research workers.* 14th ed. 1970, Edinburgh,: Oliver and Boyd. xv, 362 p.
+ - Fisher, R.A., Statistical methods for research workers. 4th ed. Edinburgh: Oliver and Boyd, 1932.
  - Hou, C.-D., *A simple approximation for the distribution of the weighted combination of non-independent or independent probabilities.* Statistics & Probability Letters, 2005. 73(2): p. 179-187.
  - Zaykin, D.V., et al., *Truncated product method for combining P-values.* Genet Epidemiol, 2002. 22(2): p. 170-85.
 
