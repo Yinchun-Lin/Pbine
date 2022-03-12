@@ -30,7 +30,7 @@ pm = t(c(p1, p2, p3)) <br />
 pn = Pbine(pm, sigma = COV, method = "Int") \# If n = 1, sigma is needed to be provided. <br />
 print(c(p1, p2, pn))
 
-### 3. Comparison on higher dimension (m) with Fisher's method.
+### 3. The case of m > 2.
 r12 = 0.2 <br />
 r13 = 0.3 <br />
 r14 = 0.4 <br />
@@ -44,8 +44,8 @@ Pbine(pm, sigma = COV) <br />
 \# 0.01404982 <br />
 Pbine(pm, method = "Fisher") <br />
 \# 0.0023 <br />
-\# NOTE 1: 0.01404982 > 0.0023 means Fisher's method overestimates the significance (i.e. there's an inflated type I error) when p-values are correlated. <br />
-\# NOTE 2: It needs more computing time to calculate when m > 3.
+\# NOTE 1: In this example, the Fisher's method overestimates the significance because p-values are correlated. <br />
+\# NOTE 2: Please wait a while because it needs more time when m > 3.
 
 ## Reference
  - Fisher, R.A., Statistical methods for research workers. 4th ed. Edinburgh: Oliver and Boyd, 1932.
