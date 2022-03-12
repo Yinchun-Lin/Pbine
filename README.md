@@ -12,7 +12,7 @@ This repository provides a tool for a meta-analysis based on a combination of p-
  - **p** \: A vector of output statistical significance (n by 1) of p-value combination. Each cell in this vector indicates the output statistical significance for a combination of p-values from m studies.
 
 ## Example 
-### 1. In the case of n > 1.
+### 1. The case of n > 1.
 set.seed(123) <br />
 p1 = runif(20) <br />
 p2 = (p1 + runif(20))/2 \# p2 is correlated with p1. <br />
