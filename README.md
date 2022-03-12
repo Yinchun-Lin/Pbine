@@ -20,7 +20,7 @@ pm = cbind(p1, p2) <br />
 pn = Pbine(pm) \# sigma is estimated by cor(p1, p2). <br />
 print(cbind(p1, p2, pn)) <br />
 
-### 2. In the case of n = 1, sigma is needed to be provided..
+### 2. The case of n = 1. sigma should be provided.
 r12 = 0.2 <br />
 r13 = 0.3 <br />
 r23 = 0.6 <br />
