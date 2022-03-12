@@ -27,7 +27,7 @@ r23 = 0.6 <br />
 COV = matrix(c(1, r12, r13, r12, 1, r23, r13, r23, 1), 3, 3) <br />
 p1 = p2 = p3 = 0.05 <br />
 pm = t(c(p1, p2, p3)) <br />
-pn = Pbine(pm, sigma = COV, method = "Int") \# If n = 1, sigma is needed to be provided. <br />
+pn = Pbine(pm, sigma = COV, method = "Int") \# If n = 1, sigma should be provided. <br />
 print(c(p1, p2, pn))
 
 ### 3. The case of m > 2.
